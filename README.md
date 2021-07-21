@@ -19,8 +19,6 @@ Pyttsx3: pyttsx3 is a text-to-speech conversion library in Python. it is a very
 Dlib: The computer engineer researching how they identify the face of a human in an image. For this, we need to identify first where the human face is located in the whole image. The face detector is the method which locates the face of a human in an image and returns as a bounding box or rectangle box values.
 ![image](https://user-images.githubusercontent.com/87173661/126486822-4804decc-6d73-4421-b5ef-74f6b5361058.png)
 
-
-
 Implementation :
 
 The system starts with opening of the front camera of the device. The real-time video of the person infront of the camera is divided into frames. The first motive is to detect the face in the frame. The entire face is marked by 68 points of Dlib 68 points Face landmark Detection. The main focus is on the eyes. Each eye is represented by 6 points. The Euclidean distance is to be calculated to find out the Eye Aspect Ratio(EAR).Based on the EAR it is decided whether the eyes are closed or not.Text message written as “Drowsy” and “Are you sleepy?” is shown on the screen.If the person is in a drowsy state then the corresponding image of the drowsiness is sent to the mail id of the company where he works. Along with these an alert sound will be played to notify that the driver that he has fallen asleep.
